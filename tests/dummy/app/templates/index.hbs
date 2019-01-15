@@ -1,0 +1,260 @@
+<p>This is a simple wrapper around <a href="http://idangero.us/swiper/">Swiper</a>
+  by idangerous which itself is a pritty slick, touch-enabled carousel-library.</p>
+
+<p>As this was created out of a particular requirement, only those swiper-options
+  have been ported, which were needed. If you would like to use anything else you
+  see on <a href="http://idangero.us/swiper/demos/">their demos</a>, please create
+  a PullRequest or issue on github.</p>
+
+<h3>Basic usage</h3>
+
+{{#swiper-container}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Speedy Gonswiper</h3>
+
+{{#swiper-container speed=100}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container speed=100}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Infinite + Pagination + extra classes</h3>
+
+{{#swiper-container pagination=true loop=true}}
+  {{#swiper-slide class='myslide myslide-1'}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-2'}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-3'}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-4'}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-5'}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container pagination=true loop=true}}
+    \{{#swiper-slide class='myslide myslide-1'}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide class='myslide myslide-2'}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide class='myslide myslide-3'}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide class='myslide myslide-4'}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide class='myslide myslide-5'}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Vertical + Pagination</h3>
+
+{{#swiper-container pagination=true vertical=true}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container pagination=true vertical=true}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Vertical + Free &amp; Sticky</h3>
+
+{{#swiper-container freeMode=true freeModeSticky=true vertical=true}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container freeMode=true freeModeSticky=true vertical=true}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Centered Slides + Pagination + Cursor</h3>
+
+{{#swiper-container grabCursor=true pagination=true centered=true slidesPerView=4 spaceBetween=5}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container grabCursor=true pagination=true centered=true slidesPerView=4 spaceBetween=5}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Keyboard + Mousewheel Control</h3>
+
+{{#swiper-container keyboardControl=true mousewheelControl=true slidesPerView=2}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<pre>
+  \{{#swiper-container keyboardControl=true mousewheelControl=true slidesPerView=2}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Change Listener</h3>
+
+<p>The configured action receives the HTML-Element of the selected slide.</p>
+
+{{#swiper-container onChange='addToHistory'}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<br>
+<textarea>{{selectionHistory}}</textarea>
+
+<pre>
+  \{{#swiper-container onChange='addToHistory'}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+
+  &lt;br&gt;
+  &lt;textarea&gt;\{{selectionHistory}}&lt;/textarea&gt;
+</pre>
+
+<h3>2 way binded index</h3>
+
+{{#swiper-container currentSlide=currentSlide}}
+  {{#swiper-slide}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+
+<br>
+<a {{action 'goToTwo'}} class="btn btn--s btn--gray" style="float: right; cursor: pointer;">Go to 2</a>
+Current Slideindex: {{currentSlide}}
+
+<pre>
+  \{{#swiper-container currentSlide=currentSlide}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+
+  &lt;br&gt;
+  &lt;a \{{action 'goToTwo'}} &gt;Go to 2&lt;/a&gt;
+  Current Slideindex: \{{currentSlide}}
+</pre>
+
+<h4>¡ Atención, Atención !</h4>
+
+<p>Please note that, in difference to a bare Swiper, this will always return <em>the correct</em>
+  Index of the current slide. Even in loops.</p>
+
+{{#swiper-container currentSlide=currentSlide2 loop=true centered=true slidesPerView=4}}
+  {{#swiper-slide class='myslide myslide-1'}}Slide 1{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-2'}}Slide 2{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-3'}}Slide 3{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-4'}}Slide 4{{/swiper-slide}}
+  {{#swiper-slide class='myslide myslide-5'}}Slide 5{{/swiper-slide}}
+{{/swiper-container}}
+Current Slideindex: {{currentSlide2}}
+
+<pre>
+  \{{#swiper-container currentSlide=currentSlide2 loop=true centered=true slidesPerView=4}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 3\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 4\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 5\{{/swiper-slide}}
+  \{{/swiper-container}}
+  Current Slideindex: \{{currentSlide2}}
+</pre>
+
+<h3>Triggering an update</h3>
+<p>If you find yourself adding/removing slides, you need to 'update' the swipe-container.</p>
+<p>You can do so by referencing a variable to observe for changes. This is usually your list of slides</p>
+
+<pre>
+  \{{#swiper-container updateFor=propertyToWatch}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<h3>Forcing an update/repaint directly</h3>
+<p>Swiper as shown to be a little bit touchy when it comes to situations where you show it via css / manipulate
+  the container after initialization. For those scenarios you can force a refresh of the component via your
+  controller</p>
+
+<p><code>forceUpdate()</code> also comes with an optional boolean parameter <code>updateTranslate</code> which
+  defaults to false. See <a href="http://idangero.us/swiper/api/#methods">the Swiper docs</a> for more details.</p>
+
+<strong>Template</strong>
+<pre>  \{{#swiper-container registerAs=superDuperSwiper}}
+    \{{#swiper-slide}}Slide 1\{{/swiper-slide}}
+    \{{#swiper-slide}}Slide 2\{{/swiper-slide}}
+  \{{/swiper-container}}
+</pre>
+
+<strong>Controller</strong>
+<pre>  modalHiddenOrSmthLikeThat() {
+    this.get('superDuperSwiper').forceUpdate();
+  }
+</pre>
